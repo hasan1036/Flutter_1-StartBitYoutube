@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+
           title: Text("Hello flutter"),
+          //dskjfdlksjf
         ),
         body: Column(
             children: [
@@ -30,8 +32,6 @@ class MyApp extends StatelessWidget {
                 height: 200.0,
                 width: double.infinity,
               ),
-
-
             ],
         ),
       ),
