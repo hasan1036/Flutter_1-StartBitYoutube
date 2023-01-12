@@ -14,22 +14,18 @@ class myApp extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
+              flex: 2,
               child: Container(
                 height: 300.0,
                 width: double.infinity,
                 color: Colors.purple,
               ),
             ), Expanded(
+              flex: 1,
               child: Container(
                 height: 300.0,
                 width: double.infinity,
                 color: Colors.green,
-              ),
-            ),Expanded(
-              child: Container(
-                height: 300.0,
-                width: double.infinity,
-                color: Colors.blue,
               ),
             ),
           ],
