@@ -15,53 +15,45 @@ class myApp extends StatelessWidget {
           title: Text("Flutter Demo"),
         ),
         body: SingleChildScrollView(
-          child: Column(
+          scrollDirection: Axis.horizontal,
+          child: Row(
             children: [
               Container(
                 color: Colors.red,
                 height: 100.0,
-                width: double.infinity,
-              ),
-
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.blue,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.green,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.yellow,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.blue,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.black,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.amber,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.blue,
                 height: 100.0,
-                width: double.infinity,
-              ),
-              Container(
+                width: 100.0,
+              ), Container(
                 color: Colors.purple,
                 height: 100.0,
-                width: double.infinity,
+                width: 100.0,
               ),
             ],
           ),
