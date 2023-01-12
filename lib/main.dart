@@ -13,28 +13,28 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
 
           title: Text("Hello flutter"),
-          //dskjfdlksjf
         ),
-        body: Column(
+        body: Row(
             children: [
               Container(
                 color: Colors.red,
                 height: 200.0,
-                width: double.infinity,
+                width: 100.0,
               ),
               Container(
                 color: Colors.blue,
                 height: 200.0,
-                width: double.infinity,
+                width: 100.0,
               ),
               Container(
                 color: Colors.purple,
                 height: 200.0,
-                width: double.infinity,
+                width: 100.0,
               ),
             ],
         ),
       ),
     );
+    //dsfesfesf
   }
 }
