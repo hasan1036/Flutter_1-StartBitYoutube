@@ -1,40 +1,72 @@
 
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-void main() {
-  runApp(MyApp());
+void main(){
+  runApp(myApp());
 }
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class myApp extends StatelessWidget {
+  const myApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-
-          title: Text("Hello flutter"),
+          title: Text("Flutter Demo"),
         ),
-        body: Row(
+        body: SingleChildScrollView(
+          child: Column(
             children: [
               Container(
                 color: Colors.red,
-                height: 200.0,
-                width: 100.0,
+                height: 100.0,
+                width: double.infinity,
+              ),
+
+              Container(
+                color: Colors.blue,
+                height: 100.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.green,
+                height: 100.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.yellow,
+                height: 100.0,
+                width: double.infinity,
               ),
               Container(
                 color: Colors.blue,
-                height: 200.0,
-                width: 100.0,
+                height: 100.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.black,
+                height: 100.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.amber,
+                height: 100.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100.0,
+                width: double.infinity,
               ),
               Container(
                 color: Colors.purple,
-                height: 200.0,
-                width: 100.0,
+                height: 100.0,
+                width: double.infinity,
               ),
             ],
+          ),
         ),
       ),
     );
-    //dsfesfesf
   }
 }
