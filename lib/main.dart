@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(MyApp());
 }
@@ -14,18 +13,26 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hello flutter"),
         ),
-        body: Center(
-          child: Container(
-            height: double.infinity,
-            width: 200.0,
-            color: Colors.blue,
-            child: Center(
-              child: Text(
-                "Hello",
-                style: TextStyle(fontSize: 40.0, color: Colors.white, fontWeight:FontWeight.bold ),
+        body: Column(
+            children: [
+              Container(
+                color: Colors.red,
+                height: 200.0,
+                width: double.infinity,
               ),
-            ),
-          ),
+              Container(
+                color: Colors.blue,
+                height: 200.0,
+                width: double.infinity,
+              ),
+              Container(
+                color: Colors.purple,
+                height: 200.0,
+                width: double.infinity,
+              ),
+
+
+            ],
         ),
       ),
     );
