@@ -1,21 +1,33 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-
-        body:Center(
-          child: Text("Hello Flutter"),
+        appBar: AppBar(
+          title: Text("Hello flutter"),
+        ),
+        body: Center(
+          child: Container(
+            height: double.infinity,
+            width: 200.0,
+            color: Colors.blue,
+            child: Center(
+              child: Text(
+                "Hello",
+                style: TextStyle(fontSize: 40.0, color: Colors.white, fontWeight:FontWeight.bold ),
+              ),
+            ),
+          ),
         ),
       ),
     );
   }
 }
-
