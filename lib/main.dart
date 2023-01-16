@@ -21,8 +21,11 @@ class MyApps extends StatelessWidget {
               padding: const EdgeInsets.all(8.4),
               child: Card(
                 elevation: 50.0,
-                child: Image.network(
-                    "https://d2zp5xs5cp8zlg.cloudfront.net/image-31454-800.jpg"),
+                child: CircleAvatar(
+                  backgroundColor: Colors.green,
+                  radius: 100.0,
+                  child: Icon(Icons.production_quantity_limits, size: 90.0,color: Colors.yellow,),
+                ),
               ),
             ),
           ),
