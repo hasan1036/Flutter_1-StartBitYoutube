@@ -5,29 +5,25 @@ void main() {
 }
 class MyApps extends StatelessWidget {
   const MyApps({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Cat"),
+          title: Text(
+            "Material App Bar",
+          ),
+          leading: Icon(Icons.search),
+          actions: [
+            Icon(Icons.alarm), 
+            Icon(Icons.notification_add)
+          ],
         ),
-        body: Container(
-          color: Colors.red,
-          child: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8.4),
-              child: Card(
-                elevation: 40.0,
-                child: CircleAvatar(
-                  backgroundColor: Colors.green,
-                  radius: 100.0,
-                  child: Icon(Icons.production_quantity_limits, size: 90.0,color: Colors.yellow,),
-                ),
-              ),
-            ),
+        floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),),
+        body: Center(
+          child: Container(
+            child: Text("Hello World"),
           ),
         ),
       ),
