@@ -15,10 +15,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Icon(
-            Icons.access_alarm,
-            color: Colors.pink,
-             size: 74.0,
+          child: SizedBox(
+            height: 50.0,
+            width: 100.0,
+            child: ElevatedButton(onPressed: (){}, child: Row(
+              children: [
+                Icon(Icons.search),
+                Text("Search"),
+              ],
+            )),
           ),
         ),
       ),
