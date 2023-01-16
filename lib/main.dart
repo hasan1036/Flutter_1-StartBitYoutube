@@ -1,32 +1,70 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-void main() {
-  runApp(MyApps());
+import 'package:flutter_1/list_item.dart';
+
+void main(){
+  runApp(MyApp());
 }
-class MyApps extends StatelessWidget {
-  const MyApps({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
-            "Material App Bar",
-          ),
-          leading: Icon(Icons.search),
-          actions: [
-            Icon(Icons.alarm), 
-            Icon(Icons.notification_add)
-          ],
+          title: Text("ListView"),
         ),
-        floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),),
-        body: Center(
-          child: Container(
-            child: Text("Hello World"),
+        body:Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: ListView(
+            children: [
+              ListItem3(),
+              ListItem1(),
+              ListItem2(),
+              ListItem1(),
+              ListItem2(),
+              ListItem1(),
+              ListItem2(),
+              ListItem1(),
+              ListItem2(),
+              ListItem1(),
+              ListItem2(),
+              ListItem1(),
+              ListItem2(),
+            ],
           ),
-        ),
+        ) ,
       ),
     );
   }
 }
+
+class ListItem1 extends StatelessWidget {
+  const ListItem1({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return  Padding(padding: EdgeInsets.all(9.0),
+      child: Container(
+        width: double.infinity,
+        height: 100.0,
+        color: Colors.amberAccent,
+      ),
+    );
+  }
+}
+class ListItem2 extends StatelessWidget {
+  const ListItem2({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return  Padding(padding: EdgeInsets.all(9.0),
+      child: Container(
+        width: double.infinity,
+        height: 100.0,
+        color: Colors.red,
+      ),
+    );
+  }
+}
+
