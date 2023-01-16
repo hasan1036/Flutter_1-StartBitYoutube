@@ -20,7 +20,7 @@ class MyApps extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.4),
               child: Card(
-                elevation: 50.0,
+                elevation: 40.0,
                 child: CircleAvatar(
                   backgroundColor: Colors.green,
                   radius: 100.0,
