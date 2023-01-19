@@ -13,58 +13,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("ListView"),
+          title: Text("Addin Asset Image"),
         ),
-        body:Container(
-          height: double.infinity,
-          width: double.infinity,
-          child: ListView(
-            children: [
-              ListItem3(),
-              ListItem1(),
-              ListItem2(),
-              ListItem1(),
-              ListItem2(),
-              ListItem1(),
-              ListItem2(),
-              ListItem1(),
-              ListItem2(),
-              ListItem1(),
-              ListItem2(),
-              ListItem1(),
-              ListItem2(),
-            ],
-          ),
-        ) ,
+        body: Column(
+          children: [
+            Center(
+              child: Image(image: AssetImage("assets/images/poster.png",), width: 300.0, height: 300.0,),
+            ),
+            Center(
+              child: Image(image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg")),
+            ), 
+          ],
+        ),
       ),
     );
   }
 }
-
-class ListItem1 extends StatelessWidget {
-  const ListItem1({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return  Padding(padding: EdgeInsets.all(9.0),
-      child: Container(
-        width: double.infinity,
-        height: 100.0,
-        color: Colors.amberAccent,
-      ),
-    );
-  }
-}
-class ListItem2 extends StatelessWidget {
-  const ListItem2({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return  Padding(padding: EdgeInsets.all(9.0),
-      child: Container(
-        width: double.infinity,
-        height: 100.0,
-        color: Colors.red,
-      ),
-    );
-  }
-}
-
